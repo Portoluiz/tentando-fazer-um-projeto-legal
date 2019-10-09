@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TECHSOW</title>
+</head>
+
+<body>
+    <div class="landing-page">
+        <div class="container">
+            <header id="topo">
+                <div class="log-esq">
+                    <h1>
+                        <a href="homerPF.html"><img src="Tech3.png" alt="" width="44px" height="44px"> <b>TECHSOW</b>
+                        </a>
+                    </h1>
+
+                </div>
+            </header>
+            <nav id="usuario">
+                <ul>
+                    <li><b><a id="hm" href="#">Homer</a></b></li>
+                    <div class="sm-container">
+                        <li><b><a id="icone" href="#" title="Singout"> <i class="show-btn fas fa-user"></i></a></b></li>
+                </ul>
+            </nav>
+            <main id="corpo">
+                <form action="" class="update-curso">
+                    <h3>Adicionar Curso</h3>
+                    <div class="txtb">
+                        <span>Curso</span>
+                        <input type="text">
+                    </div>
+                    <div class="txtb">
+                        <span data-placeholder="">Descrição</span>
+                        <input type="text">
+                    </div>
+                    <div class="btn-update">
+                        <input type="submit" class="logbtn" value="Cadastrar">
+                    </div>
+                </form>
+            </main>
+            <aside id="middle">
+                <div class="menu">
+                    <li class="btn" id="title-menu">
+                        Menu
+                    </li>
+                    <li class="item" id='cursos'>
+                        <a href="#cursos" class="btn"> Cursos</a>
+                        <div class="smenu">
+                            <a href="">Algoritimos</a>
+                            <a href="">Matematica</a>
+                            <a href="">Portugues</a>
+                        </div>
+                    </li>
+                    <li class="item" id="forum">
+                        <a href="#forum" class="btn">Forum</a>
+                        <div class="smenu">
+                            <a href="">Responder</a>
+                            <a href="">Fazer pergunta</a>
+                        </div>
+                    </li>
+                    <li class="item" id="update">
+                        <a href="#update" class="btn">Update</a>
+                        <div class="smenu">
+                            <a href="update-curso.html">Curso</a>
+                            <a href="update-materia.html">Materia</a>
+                        </div>
+                    </li>
+                    <li class="item" id="cadastra-usuario">
+                        <a href="#cadastra-usuario" class="btn">Cadastrar Usuario</a>
+                        <div class="smenu">
+                            <a href="">Professor</a>
+                            <a href="">Aluno</a>
+                        </div>
+                    </li>
+                    <li class="item" id="listar-usuario">
+                        <a href="#listar-usuario" class="btn">Listar Usuario</a>
+                        <div class="smenu">
+                            <a href="">Professor</a>
+                            <a href="">Aluno</a>
+                        </div>
+                    </li>
+                </div>
+                <!--            <div class="boot">
+                <img src="Sher.png" alt="Chat-Boot">
+            </div>-->
+            </aside>
+            <footer id="rodape">
+                <i class="fa fa-copyright" aria-hidden="true">  2019  TODOS OS DIREITOS RESERVADOS</i>
+            </footer>
+            </div>
+        </div>
+        <script>
+            $(".show-btn").click(function() {
+                $(".sm-menu").fadeToggle("fast");
+            });
+        </script>
+</body>
+
+</html>
